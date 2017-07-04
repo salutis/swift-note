@@ -1,3 +1,7 @@
+// Copyright © 2017 Rudolf Adamkovič LLC. All rights reserved.
+// Licensed under the MIT license. Developed for Essence:
+// https://itunes.apple.com/app/essence-breathing-relaxation/id768594011
+
 public struct NoteDescription {
     public let scientificNotation: String
 
