@@ -4,20 +4,6 @@ import XCTest
 final class NoteTests: XCTestCase {}
 
 extension NoteTests {
-    func testEqual() {
-        let note1 = Note(pianoKey: 1)
-        let note2 = Note(pianoKey: 1)
-        XCTAssertEqual(note1, note2)
-    }
-
-    func testNotEqual() {
-        let note1 = Note(pianoKey: 1)
-        let note2 = Note(pianoKey: 2)
-        XCTAssertNotEqual(note1, note2)
-    }
-}
-
-extension NoteTests {
     func testNameB0() {
         let note = Note(pianoKey: 3)
         XCTAssertEqual(note.name, .b)
@@ -182,5 +168,11 @@ extension Note {
     init(name: Name, octave: Int) {
         self.name = name
         self.octave = octave
+    }
+}
+
+extension Note: Equatable {
+    public static func ==(lhs: Note, rhs: Note) -> Bool {
+        return lhs.name == rhs.name && lhs.octave == rhs.octave
     }
 }

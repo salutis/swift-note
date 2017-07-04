@@ -38,12 +38,6 @@ private extension Note {
     static let nameCount = Name.allValues.count
 }
 
-extension Note: Equatable {
-    public static func ==(lhs: Note, rhs: Note) -> Bool {
-        return lhs.name == rhs.name && lhs.octave == rhs.octave
-    }
-}
-
 extension Note.Name {
     public static var allValues: [Note.Name] {
         return [
