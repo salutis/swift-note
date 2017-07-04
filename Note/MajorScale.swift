@@ -1,15 +1,12 @@
 public struct MajorScale {
-
     public let tonic: PianoKey
 
     public init(tonic: PianoKey) {
         self.tonic = tonic
     }
-
 }
 
 extension MajorScale {
-
     public var pianoKeys: [PianoKey] {
         let positions = [
             tonic.position,
@@ -22,5 +19,4 @@ extension MajorScale {
         ]
         return positions.map(PianoKey.init)
     }
-
 }

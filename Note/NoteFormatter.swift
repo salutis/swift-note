@@ -1,23 +1,18 @@
 public struct NoteFormatter<NoteType: Note> {
-
     public let note: NoteType
 
     public init(note: NoteType) {
         self.note = note
     }
-
 }
 
 extension NoteFormatter {
-
     var scientificNotation: String {
         return note.name.letter + note.name.accidental + note.octave.subscriptDescription
     }
-
 }
 
 private extension NoteName {
-
     var letter: String {
         switch self {
         case .c, .cSharp:
@@ -44,11 +39,9 @@ private extension NoteName {
             return ""
         }
     }
-
 }
 
 private extension Int {
-
     var subscriptDescription: String {
         let digits = String(self).characters
         let subscriptDigits = digits.map { character -> Character in
@@ -68,5 +61,4 @@ private extension Int {
         }
         return String(subscriptDigits)
     }
-
 }

@@ -1,5 +1,4 @@
 public enum NoteName {
-
     case c, cSharp
     case d, dSharp
     case e
@@ -7,11 +6,9 @@ public enum NoteName {
     case g, gSharp
     case a, aSharp
     case b
-
 }
 
 public extension NoteName {
-
     public static var allValues: [NoteName] {
         return [
             .c, .cSharp,
@@ -23,5 +20,4 @@ public extension NoteName {
             .b
         ]
     }
-    
 }

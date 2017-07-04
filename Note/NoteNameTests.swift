@@ -4,7 +4,6 @@ import XCTest
 final class NoteNameTests: XCTestCase {}
 
 extension NoteNameTests {
-
     func testAllValuesC() {
         let expectedAllValues: [NoteName] = [
             .c, .cSharp,
@@ -17,5 +16,4 @@ extension NoteNameTests {
         ]
         XCTAssertEqual(NoteName.allValues, expectedAllValues)
     }
-
 }

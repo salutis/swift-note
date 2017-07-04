@@ -4,7 +4,6 @@ import XCTest
 final class MajorScaleTests: XCTestCase {}
 
 extension MajorScaleTests {
-
     func testTonic1() {
         let tonic = PianoKey(position: 1)
         let majorScale = MajorScale(tonic: tonic)
@@ -16,11 +15,9 @@ extension MajorScaleTests {
         let majorScale = MajorScale(tonic: tonic)
         XCTAssertEqual(majorScale.tonic, tonic)
     }
-
 }
 
 extension MajorScaleTests {
-
     func testPianoKeys1() {
         let tonicPosition = 1
         let tonic = PianoKey(position: tonicPosition)
@@ -52,5 +49,4 @@ extension MajorScaleTests {
             ]
         XCTAssertEqual(majorScale.pianoKeys, expectedNotes)
     }
-
 }

@@ -2,7 +2,6 @@ import XCTest
 @testable import Note
 
 final class NoteFormatterTests: XCTestCase {
-
     func testNote1() {
         let note = ConcreteNote()
         let noteFormatter = NoteFormatter(note: note)
@@ -14,11 +13,9 @@ final class NoteFormatterTests: XCTestCase {
         let noteFormatter = NoteFormatter(note: note)
         XCTAssertEqual(noteFormatter.note, note)
     }
-
 }
 
 extension NoteFormatterTests {
-
     func testNameC() {
         let note = ConcreteNote(name: .c, octave: 0)
         let noteFormatter = NoteFormatter(note: note)
@@ -90,15 +87,12 @@ extension NoteFormatterTests {
         let noteFormatter = NoteFormatter(note: note)
         XCTAssertEqual(noteFormatter.scientificNotation, "B₀")
     }
-
 }
 
 extension NoteFormatterTests {
-
     func testOctave() {
         let note = ConcreteNote(name: .c, octave: 1234567890)
         let noteFormatter = NoteFormatter(note: note)
         XCTAssertEqual(noteFormatter.scientificNotation, "C₁₂₃₄₅₆₇₈₉₀")
     }
-
 }

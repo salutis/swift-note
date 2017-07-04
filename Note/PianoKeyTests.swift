@@ -4,7 +4,6 @@ import XCTest
 final class PianoKeyTests: XCTestCase {}
 
 extension PianoKeyTests {
-
     func testPitchType() {
         let pianoKey = PianoKey(position: 0)
         XCTAssertTrue(pianoKey.position as Any is Int)
@@ -15,11 +14,9 @@ extension PianoKeyTests {
         let pianoKey = PianoKey(position: pitch)
         XCTAssertEqual(pianoKey.position, pitch)
     }
-
 }
 
 extension PianoKeyTests {
-
     func testEqual() {
         let note1 = PianoKey(position: 1)
         let note2 = PianoKey(position: 1)
@@ -31,11 +28,9 @@ extension PianoKeyTests {
         let note2 = PianoKey(position: 2)
         XCTAssertNotEqual(note1, note2)
     }
-
 }
 
 extension PianoKeyTests {
-
     func testNameB0() {
         let pianoKey = PianoKey(position: 3)
         XCTAssertEqual(pianoKey.name, .b)
@@ -105,11 +100,9 @@ extension PianoKeyTests {
         let pianoKey = PianoKey(position: 16)
         XCTAssertEqual(pianoKey.name, .c)
     }
-
 }
 
 extension PianoKeyTests {
-
     func testNamePosition0() {
         let pianoKey = PianoKey(position: 0)
         XCTAssertEqual(pianoKey.name, .gSharp)
@@ -124,11 +117,9 @@ extension PianoKeyTests {
         let pianoKey = PianoKey(position: -2)
         XCTAssertEqual(pianoKey.name, .fSharp)
     }
-
 }
 
 extension PianoKeyTests {
-
     func testOctaveNegative1Start() {
         let pianoKey = PianoKey(position: -20)
         XCTAssertEqual(pianoKey.octave, -1)
@@ -168,5 +159,4 @@ extension PianoKeyTests {
         let pianoKey = PianoKey(position: 27)
         XCTAssertEqual(pianoKey.octave, 2)
     }
-
 }

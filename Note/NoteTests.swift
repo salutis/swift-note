@@ -4,7 +4,6 @@ import XCTest
 final class NoteTests: XCTestCase {}
 
 extension NoteTests {
-
     func testEqual() {
         let note1 = ConcreteNote()
         let note2 = note1
@@ -22,11 +21,9 @@ extension NoteTests {
         let note2 = ConcreteNote(octave: 2)
         XCTAssertNotEqual(note1, note2)
     }
-
 }
 
 struct ConcreteNote: Note {
-
     let name: NoteName
     let octave: Int
 
@@ -34,5 +31,4 @@ struct ConcreteNote: Note {
         self.name = name
         self.octave = octave
     }
-    
 }
