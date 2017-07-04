@@ -23,7 +23,7 @@
 import XCTest
 @testable import Note
 
-class NoteNameTests: XCTestCase {}
+final class NoteNameTests: XCTestCase {}
 
 extension NoteNameTests {
 

@@ -23,7 +23,7 @@
 import XCTest
 @testable import Note
 
-class MajorScaleTests: XCTestCase {}
+final class MajorScaleTests: XCTestCase {}
 
 extension MajorScaleTests {
 

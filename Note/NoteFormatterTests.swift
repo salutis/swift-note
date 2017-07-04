@@ -23,7 +23,7 @@
 import XCTest
 @testable import Note
 
-class NoteFormatterTests: XCTestCase {
+final class NoteFormatterTests: XCTestCase {
 
     func testNote1() {
         let note = ConcreteNote()

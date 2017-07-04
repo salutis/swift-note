@@ -23,7 +23,7 @@
 import XCTest
 @testable import Note
 
-class PianoKeyTests: XCTestCase {}
+final class PianoKeyTests: XCTestCase {}
 
 extension PianoKeyTests {
 
