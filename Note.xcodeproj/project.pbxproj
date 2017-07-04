@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		915E68B11DC38D4300C12B7D /* Note.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 915E68A71DC38D4300C12B7D /* Note.framework */; };
-		915E68B81DC38D4300C12B7D /* Note.h in Headers */ = {isa = PBXBuildFile; fileRef = 915E68AA1DC38D4300C12B7D /* Note.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		91E47AF61DC78F1B005DE05B /* PianoKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915E68C11DC38DA300C12B7D /* PianoKey.swift */; };
 		91E47AF71DC78F1B005DE05B /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9145259A1DC77E7B00897B5B /* Note.swift */; };
 		91E47AF81DC78F1B005DE05B /* NoteFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910658461DC55A4700827B01 /* NoteFormatter.swift */; };
@@ -39,7 +38,6 @@
 		914525A41DC78D9600897B5B /* PianoKeyTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PianoKeyTests.swift; sourceTree = "<group>"; };
 		914525A61DC78DAD00897B5B /* Info-Tests.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-Tests.plist"; sourceTree = "<group>"; };
 		915E68A71DC38D4300C12B7D /* Note.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Note.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		915E68AA1DC38D4300C12B7D /* Note.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Note.h; sourceTree = "<group>"; };
 		915E68AB1DC38D4300C12B7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		915E68B01DC38D4300C12B7D /* NoteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NoteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		915E68C11DC38DA300C12B7D /* PianoKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PianoKey.swift; sourceTree = "<group>"; };
@@ -88,7 +86,6 @@
 		915E68A91DC38D4300C12B7D /* Note */ = {
 			isa = PBXGroup;
 			children = (
-				915E68AA1DC38D4300C12B7D /* Note.h */,
 				91E47B021DC7A64C005DE05B /* MajorScale.swift */,
 				91E47B041DC7A655005DE05B /* MajorScaleTests.swift */,
 				915E68C11DC38DA300C12B7D /* PianoKey.swift */,
@@ -112,7 +109,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				915E68B81DC38D4300C12B7D /* Note.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
