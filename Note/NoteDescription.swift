@@ -1,42 +1,27 @@
-public struct NoteFormatter<NoteType: Note> {
-    public let note: NoteType
+public struct NoteDescription {
+    public let scientificNotation: String
 
-    public init(note: NoteType) {
-        self.note = note
+    public init(note: Note) {
+        scientificNotation = note.name.letter + note.name.accidental + note.octave.subscriptDescription
     }
 }
 
-extension NoteFormatter {
-    var scientificNotation: String {
-        return note.name.letter + note.name.accidental + note.octave.subscriptDescription
-    }
-}
-
-private extension NoteName {
+private extension Note.Name {
     var letter: String {
         switch self {
-        case .c, .cSharp:
-            return "C"
-        case .d, .dSharp:
-            return "D"
-        case .e:
-            return "E"
-        case .f, .fSharp:
-            return "F"
-        case .g, .gSharp:
-            return "G"
-        case .a, .aSharp:
-            return "A"
-        case .b:
-            return "B"
+        case .c, .cSharp: return "C"
+        case .d, .dSharp: return "D"
+        case .e: return "E"
+        case .f, .fSharp: return "F"
+        case .g, .gSharp: return "G"
+        case .a, .aSharp: return "A"
+        case .b: return "B"
         }
     }
     var accidental: String {
         switch self {
-        case .cSharp, .dSharp, .fSharp, .gSharp, .aSharp:
-            return "♯"
-        default:
-            return ""
+        case .cSharp, .dSharp, .fSharp, .gSharp, .aSharp: return "♯"
+        default: return ""
         }
     }
 }

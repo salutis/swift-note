@@ -1,22 +1,16 @@
 public struct MajorScale {
-    public let tonic: PianoKey
+    public let notes: [Note]
 
-    public init(tonic: PianoKey) {
-        self.tonic = tonic
-    }
-}
-
-extension MajorScale {
-    public var pianoKeys: [PianoKey] {
+    public init(pianoKey: Int) {
         let positions = [
-            tonic.position,
-            tonic.position + 2,
-            tonic.position + 2 + 2,
-            tonic.position + 2 + 2 + 1,
-            tonic.position + 2 + 2 + 1 + 2,
-            tonic.position + 2 + 2 + 1 + 2 + 2,
-            tonic.position + 2 + 2 + 1 + 2 + 2 + 2,
+            pianoKey,
+            pianoKey + 2,
+            pianoKey + 2 + 2,
+            pianoKey + 2 + 2 + 1,
+            pianoKey + 2 + 2 + 1 + 2,
+            pianoKey + 2 + 2 + 1 + 2 + 2,
+            pianoKey + 2 + 2 + 1 + 2 + 2 + 2
         ]
-        return positions.map(PianoKey.init)
+        notes = positions.map(Note.init)
     }
 }
